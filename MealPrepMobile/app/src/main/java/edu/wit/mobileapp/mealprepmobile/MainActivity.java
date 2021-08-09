@@ -86,23 +86,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-
-//                            @Override
-//                            public void onResponse(String response) {
-//                                Toast.makeText(MainActivity.this, response, Toast.LENGTH_SHORT).show();
-//                            }
-//                        }, new Response.ErrorListener() {
-//                    @Override
-//                    public void onErrorResponse(VolleyError error) {
-//                        Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
-//                    }
-//                });
-
 // Add the request to the RequestQueue.
                 queue.add(request);
 
-
-            //    Toast.makeText(MainActivity.this, "Clicked", Toast.LENGTH_SHORT).show();
             }
 
 
