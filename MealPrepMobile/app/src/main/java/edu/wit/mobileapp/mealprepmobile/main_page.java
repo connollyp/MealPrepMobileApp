@@ -6,8 +6,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -38,7 +41,8 @@ public class main_page extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
-
+        Button configure = (Button) findViewById(R.id.configure_button);
+        Button generateMealPlan = (Button) findViewById(R.id.generate_button);
         int userId = getIntent().getIntExtra("userId", 0);
         mList = findViewById(R.id.meal_list);
 
@@ -58,6 +62,16 @@ public class main_page extends AppCompatActivity {
         mList.setAdapter(adapter);
         getData(userId);
 
+        configure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(main_page.this, configure_page.class);
+                intent.putExtra("userId", userId);
+                startActivity(intent);
+
+
+            }
+        });
 
     }
 
