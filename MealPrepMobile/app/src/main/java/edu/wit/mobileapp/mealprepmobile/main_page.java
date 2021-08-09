@@ -73,6 +73,17 @@ public class main_page extends AppCompatActivity {
             }
         });
 
+        generateMealPlan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(main_page.this, meal_plan.class);
+                intent.putExtra("userId", userId);
+                startActivity(intent);
+
+
+            }
+        });
+
     }
 
     private void getData(int userId){
