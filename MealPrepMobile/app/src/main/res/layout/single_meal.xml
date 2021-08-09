@@ -3,43 +3,61 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="10dp">
+    android:gravity="center_vertical"
+    >
 
     <TextView
         android:id="@+id/meal_name"
-        android:layout_width="wrap_content"
+        android:layout_width="135dp"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:padding="10dp"
         android:text="Name"/>
     <TextView
         android:id="@+id/meal_calories"
-        android:layout_width="wrap_content"
+        android:layout_width="35dp"
         android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textAlignment="center"
+
         android:text="Calories"/>
     <TextView
         android:id="@+id/meal_protein"
-        android:layout_width="wrap_content"
+        android:layout_width="35dp"
         android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textAlignment="center"
+
         android:text="Protein"/>
     <TextView
         android:id="@+id/meal_carbs"
-        android:layout_width="wrap_content"
+        android:layout_width="35dp"
         android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textAlignment="center"
+
         android:text="Carbs"/>
     <TextView
         android:id="@+id/meal_totalfat"
-        android:layout_width="wrap_content"
+        android:layout_width="35dp"
         android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textAlignment="center"
+
         android:text="Total Fat"/>
     <TextView
         android:id="@+id/meal_fiber"
-        android:layout_width="wrap_content"
+        android:layout_width="35dp"
         android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textAlignment="center"
+
         android:text="Fiber"/>
     <TextView
         android:id="@+id/meal_sugar"
-        android:layout_width="wrap_content"
+        android:layout_width="35dp"
         android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textAlignment="center"
+
         android:text="Sugar"/>
 </LinearLayout>

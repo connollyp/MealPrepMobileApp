@@ -43,9 +43,12 @@ public class main_page extends AppCompatActivity {
         mList = findViewById(R.id.meal_list);
 
         mealList=new ArrayList<>();
+
+
+
         adapter=new MealAdapter(getApplicationContext(), mealList);
         linearLayoutManager = new LinearLayoutManager(this);
-        linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         dividerItemDecoration = new DividerItemDecoration(mList.getContext(), linearLayoutManager.getOrientation());
 
         mList.addItemDecoration(dividerItemDecoration);
@@ -84,6 +87,7 @@ public class main_page extends AppCompatActivity {
                         meal.setSugar(jsonObject.getInt("Sugar"));
 
                         mealList.add(meal);
+                        System.out.println(mealList.size());
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
