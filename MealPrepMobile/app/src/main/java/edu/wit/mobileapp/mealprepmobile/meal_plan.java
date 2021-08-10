@@ -173,7 +173,7 @@ public class meal_plan extends AppCompatActivity {
 
                                 int numValidPlans = mealList.size();
 
-                                mealList=new ArrayList<>();
+                                mealList.clear();
 
                                 for(int k = 0; k < maxCombos; k++){
                                     int calories = 0;
@@ -204,8 +204,6 @@ public class meal_plan extends AppCompatActivity {
                                         validIndex++;
                                     }
                                 }
-
-                                //Need to update table
 
                             }
                         } catch (JSONException e) {
