@@ -208,8 +208,6 @@ public class meal_plan extends AppCompatActivity {
                                     }
                                 }
 
-                                //Need to update table
-
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
