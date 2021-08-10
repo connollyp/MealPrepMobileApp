@@ -170,10 +170,13 @@ public class meal_plan extends AppCompatActivity {
                                 Meal[] data = new Meal[maxCombos];
 
                                 generateMealPlan(data, 0, mealList.size(), 0);
-
+                                System.out.println("Loop");
+                                for(int j=0; j<data.length; j++) {
+                                    System.out.println(data[j]);
+                                }
                                 int numValidPlans = mealList.size();
 
-                                mealList=new ArrayList<>();
+                                mealList.clear();
 
                                 for(int k = 0; k < maxCombos; k++){
                                     int calories = 0;
