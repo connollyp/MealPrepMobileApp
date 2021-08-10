@@ -2,6 +2,7 @@ package edu.wit.mobileapp.mealprepmobile;
 
 public class Meal {
     public String Name;
+    public int MealId;
     public int Calories;
     public int Protein;
     public int Carbs;
@@ -27,6 +28,14 @@ public class Meal {
         TotalFat = totalFat;
         Fiber = fiber;
         Sugar = sugar;
+    }
+
+    public int getMealId() {
+        return MealId;
+    }
+
+    public void setMealId(int mealId) {
+        MealId = mealId;
     }
 
     public String getName() {
